@@ -1,4 +1,4 @@
-var reviewData=[
+let reviewData=[
     {
         text: "My first order arrived today in perfect condition. From the time I sent a question about the item to making the purchase, to the shipping and now the delivery, your company, Tecs, has stayed in touch. Such great service. I look forward to shopping on your site in the future and would highly recommend it.",
         author: "- Tama Brown"
@@ -16,9 +16,9 @@ var reviewData=[
         author: "- Solla Hail"
     }
 ];
-var reviewText = document.getElementById("review-text");
-var reviewAuthor = document.getElementById('review-author');
-var dotsContainer = document.querySelector('.dots-container');
+let reviewText = document.getElementById("review-text");
+let reviewAuthor = document.getElementById('review-author');
+let dotsContainer = document.querySelector('.dots-container');
 dotsContainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('review-dot')) {
     document.querySelectorAll('.review-dot').forEach(dot => {
@@ -29,7 +29,7 @@ dotsContainer.addEventListener('click', (e) => {
     e.target.classList.remove('bg-secondary');
     e.target.classList.remove('opacity-50');
     e.target.classList.add('bg-primary');
-    var index = e.target.getAttribute('data-index');
+    let index = e.target.getAttribute('data-index');
     reviewText.textContent = reviewData[index].text;
     reviewAuthor.textContent = reviewData[index].author;
   }
