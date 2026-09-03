@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.topbar-social {
+  gap: 1.1rem;
+}
+
+.nav-actions {
+  gap: 1.5rem;
+}
+
+.nav-actions a,
+.topbar-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links .nav-link {
+  font-size: 14px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  font-weight: 600;
+}
+
+.login-page {
+  background-color: #fff;
+  min-height: 425px;
+}
+
+.page-container {
+  width: 1000px;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.breadcrumb a {
+  color: #111;
+}
+
+.breadcrumb span:last-child {
+  color: #555;
+}
+
+.page-container h1 {
+  font-size: 27px;
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+
+.login-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.login-card {
+  width: 400px;
+  height: 295px;
+  background-color: #f5f7ff;
+  padding: 30px 40px;
+}
+
+.login-card h2 {
+  font-size: 15px;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 11px;
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.login-card label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0 0 7px;
+}
+
+.login-card label span {
+  color: #e32626;
+}
+
+.login-card input {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #aeb3bd;
+  background-color: #fff;
+  padding: 0 12px;
+  font-size: 10px;
+  margin-bottom: 13px;
+}
+
+.login-card input::placeholder {
+  color: #b7bdc8;
+}
+
+.login-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.login-actions button,
+.create-account {
+  height: 36px;
+  border: 0;
+  border-radius: 25px;
+  background-color: #0865ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.login-actions button {
+  width: 108px;
+}
+
+.login-actions a {
+  color: #0865ff;
+  font-size: 10px;
+}
+
+.new-customer ul {
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+.new-customer li {
+  list-style: disc;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.create-account {
+  width: 150px;
+}
+
+.benefits {
+  height: 195px;
+  background-color: #f5f7ff;
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+  text-align: center;
+  padding-top: 43px;
+}
+
+.benefit {
+  width: 200px;
+}
+
+.benefit-icon {
+  width: 47px;
+  height: 47px;
+  background-color: #0865ff;
+  color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.benefit h3 {
+  font-size: 13px;
+  margin: 17px 0 9px;
+}
+
+.benefit p {
+  font-size: 10px;
+  color: #666;
+  line-height: 1.45;
+  margin: 0;
+}
+
+footer {
+  min-height: 355px;
+  background-color: #050505;
+  color: #fff;
+  padding: 37px calc((100% - 1000px) / 2) 15px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter h2 {
+  font-size: 25px;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.newsletter p {
+  font-size: 10px;
+  color: #ccc;
+  margin: 0;
+}
+
+.subscribe {
+  display: flex;
+  gap: 16px;
+}
+
+.subscribe input {
+  width: 275px;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 12px;
+  font-size: 10px;
+}
+
+.subscribe input::placeholder {
+  color: #ddd;
+}
+
+.subscribe button {
+  width: 108px;
+  height: 36px;
+  border: 0;
+  border-radius: 25px;
+  background-color: #0865ff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr 1.15fr 1.5fr;
+  gap: 38px;
+  margin-top: 28px;
+}
+
+.footer-columns h4 {
+  color: #999;
+  font-size: 10px;
+  margin: 0 0 14px;
+}
+
+.footer-columns a,
+.footer-columns p {
+  display: block;
+  color: #eee;
+  font-size: 9px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.footer-columns p a {
+  display: inline;
+  color: #00aaff;
+}
+
+.footer-columns a:hover {
+  color: #0865ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 27px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-footer {
+  display: flex;
+  gap: 14px;
+}
+
+.social-footer a {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.payment-icons span {
+  background-color: #fff;
+  color: #222;
+  padding: 3px 6px;
+  font-size: 7px;
+  border-radius: 2px;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-size: 8px;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .page-container {
+    width: 90%;
+  }
+
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .login-boxes {
+    gap: 20px;
+  }
+
+  .login-card {
+    width: 48%;
+  }
+
+  .benefits {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-card {
+    width: 90%;
+  }
+
+  .login-page {
+    padding-bottom: 30px;
+  }
+
+  .benefits {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-bottom: 40px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    height: auto;
+    min-height: 295px;
+  }
+
+  .login-actions {
+    flex-wrap: wrap;
+  }
+}
