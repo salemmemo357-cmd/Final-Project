@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/nav_footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header class="bg-black">
+        <div class="container py-3 d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <span class="text-secondary">Mon Thu:</span>
+                <strong class="text-white px-2"> 9:00 AM-5:30 PM </strong>
+                <i class="fa-solid fa-chevron-down text-white small"></i>
+            </div>
+            <div class="text-secondary">
+                <span>Visit our showroom in 1234 Street Address </span>
+                <a href="#" class="text-white text-decoration-none border-bottom border-3 pb-1 border-white ms-1 fw-bold">Contact Us</a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <span class="text-white ">Call Us: (00) 1234 5678</span>
+                <a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></i></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-4">
+        <div class="container">
+            <img src="assets/logo.png" alt="" class="pe-5">
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold style-13px">
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">Laptops</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">Desktop PCs</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">Networking Devices</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">Printers & Scanners</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">PC Parts</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">All Other Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold fs-6 px-2" href="#">Repairs</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-outline-primary border-3 rounded-pill px-4 py-1 fw-bold">Our Deals</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#" class="text-dark"><i class="fa-solid fa-magnifying-glass fs-5"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">2</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/profile.png" class="rounded-circle" width="30" height="30" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-3">
+
+        <div class="container">
+            <span class="small">
+                Home <span class="text-primary">></span> Shopping Cart <span class="text-primary">></span> Checkout Process
+            </span>
+            <div class="row gx-5">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between w-50 mt-3 mb-5">
+                        <h2 class="fw-bold">Checkout</h2>
+                        <button class="btn btn-outline-primary rounded-pill w-50">Sign in</button>
+                    </div>
+                    <h5 class="fw-bold">Shipping Address</h5>
+                    <hr>
+                    <form class="w-75" id="checkout-form" novalidate>
+                        <div>
+                            <label for="" class="fw-bold">Email Address<span class="text-danger"> *</span></label>
+                            <input type="email" class="form-control my-2 check-me" required>
+                            <p class=" text-body-secondary small">You can create an account after checkout.</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">First Name<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">Last Name<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">Company<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">Street Address<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                            <input type="text" class="form-control my-2">
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">City<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">State/Province<span class="text-danger"> *</span></label>
+                            <select name="" id="" class="form-select my-2 check-me">
+                                <option value="" selected>Please, select a region, state or province</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">Zip/Postal Code<span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control my-2 check-me" required>
+                        </div>
+                        <div>
+                            <label for="" class="fw-bold">Country<span class="text-danger"> *</span></label>
+                            <select name="" id="" class="form-select my-2 check-me">
+                                <option value="" selected>United States</option>
+                            </select>
+                        </div>
+                         <div>
+                            <label for="" class="fw-bold">Phone Number<span class="text-danger"> *</span></label>
+                            <input type="tel" class="form-control my-2 check-me" required>
+                            <br>
+                        </div>
+
+
+                    
+                    <hr style="width: 847.99px;">
+                    <div>
+                        <span class="fw-bold"> Standard Rate</span>
+                        <div class="d-flex justify-content-between align-items-center mb-4 mt-2 form-check">
+                            <div>
+                                <input class="form-check-input" type="radio" name="shippingMethod" id="radioDefault" checked>
+                                <label class="form-check-label" for="radioDefault2">
+                                    Price may vary depending on the item/destination. Shop Staff will contact you. $21.00
+                                </label>
+                            </div>
+                            <span class="fw-bold">$21.00</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fw-bold">Pickup from store</span>
+                        <div class="d-flex justify-content-between align-items-center mb-4 mt-2 form-check">
+                            <div>
+                                <input class="form-check-input" type="radio" name="shippingMethod" id="radioDefault2">
+                                <label class="form-check-label" for="radioDefault2">
+                                    1234 Street Adress City Address, 1234
+                                </label>
+                            </div>
+                            <span class="fw-bold">$0.00</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-25 my-4 p-3 rounded-pill">Next</button>
+                    </form>
+                    
+
+                </div>
+                <div class="col-4">
+                    <div class="position-relative mx-auto mb-5 mt-4" style="width: 350px;">
+
+                        <div class="position-absolute w-100"
+                        style="top: 16px; height: 2px; right: 15px;
+                        background: linear-gradient(to right, #0d6efd 50%, #d1d5db 50%);">
+                        </div>
+
+                        <div class="d-flex justify-content-between position-relative">
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="rounded-circle border border-primary border-2 bg-white text-primary
+                                            d-flex align-items-center justify-content-center"
+                                    style="width: 34px; height: 34px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.9rem;"></i>
+                                </div>
+
+                                <span class="fw-bold text-dark text-nowrap mt-2"
+                                    style="font-size: 0.85rem;">
+                                    Shipping
+                                </span>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="rounded-circle border border-2 bg-white text-secondary
+                                         d-flex align-items-center justify-content-center"
+                                    style="width: 34px; height: 34px; border-color: #9ca3af !important;">
+                                    <span class="fw-bold" style="font-size: 0.9rem;">2</span>
+                                </div>
+
+                                <span class="text-muted text-nowrap mt-2"
+                                  style="font-size: 0.85rem;">
+                                Review & Payments
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="p-4 mt-5" style="background-color: #F5F7FF;">
+
+                        <h3 class="fw-bold mb-4">Order Summary</h3>
+                        <hr class="mb-4">
+    
+                        <div class="d-flex justify-content-between align-items-center mb-4" style="cursor: pointer;">
+                            <span class="text-dark">2 Items in Cart</span>
+                            <i class="fa-solid fa-chevron-up" style="font-size: 0.7rem;"></i>
+                        </div>
+    
+    
+                        <div class="d-flex flex-column gap-4">
+        
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="assets/desktop-lil.png" alt="PC" style="width: 75px; height: 75px;">
+                                <div class="d-flex flex-column">
+                                    <span class="mb-2 text-dark">
+                                        MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER...
+                                    </span>
+                                    <div>
+                                        <span class="text-muted me-2 small">Qty 1</span>
+                                        <span class="fw-bold text-dark small">$3,799.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="assets/laptop-lil.png" alt="Laptop" style="width: 75px; height: 75px;">
+                                <div class="d-flex flex-column">
+                                    <span class="mb-2 text-dark">
+                                        MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER...
+                                    </span>
+                                    <div>
+                                        <span class="text-muted me-2 small">Qty 1</span>
+                                        <span class="fw-bold text-dark small">$3,799.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+
+    <section class="container my-5">
+        <div class="row g-4 text-center justify-content-center">
+            <div class="col-12 col-md-3">
+                <div class="d-flex flex-column align-items-center ">
+                    <div class="bg-primary icon text-white rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <i class="fas fa-headset fs-5"></i>
+                    </div>
+                    <h6 class="fw-bold mb-1">Product Support</h6>
+                    <p class="text-muted small px-3">Up to 3 years on-site warranty available for your peace of mind.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="bg-primary icon text-white rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h6 class="fw-bold mb-1">Personal Account</h6>
+                    <p class="text-muted small px-3">With big discounts, free delivery and a dedicated support specialist.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="bg-primary icon text-white rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <i class="fas fa-tag fs-5"></i>
+                    </div>
+                    <h6 class="fw-bold mb-1">Amazing Savings</h6>
+                    <p class="text-muted small px-3">Up to 70% off new Products, you can be sure of the best price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black pt-5 pb-1 text-white">
+        <div class="container">
+            <div class="row gy-3 align-items-center mb-5 ">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h3 class="fw-bold mb-1">Sign Up To Our Newsletter</h3>
+                    <p class="text-secondary ">Be the first to hear about the latest offers.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 ">
+                    <form class="d-flex g-2 align-items-center text-white text-nowrap gap-3 f-f">
+                        <input type="email" class="form-control bg-transparent custom-input text-white rounded-1 py-2" placeholder="Your Email">
+                        <button class="btn btn-primary fw-bold text-white rounded-pill px-4 ">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row  gx-5 border-bottom border-white pb-3 border-opacity-25">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="fw-bold text-secondary mb-3 small">Information</h6>
+                    <ul class="list-unstyled small ">
+                        <li><a href="#" class="text-white text-decoration-none ">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">About Zip</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Terms</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Orders and Returns</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Advanced Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Newsletter Subscription</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="fw-bold text-secondary mb-3 small">PC Parts</h6>
+                    <ul class="list-unstyled small ">
+                        <li><a href="#" class="text-white text-decoration-none ">CPUS</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Add On Cards</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Hard Drives (Internal)</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Graphic Cards</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Keyboards / Mics</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Cases / Power Supplies / Cooling</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">RAM(Memory)</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Software</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Speakers / Headsets</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Motherboards</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="fw-bold text-secondary mb-3 small">Desktop PCs</h6>
+                    <ul class="list-unstyled small ">
+                        <li><a href="#" class="text-white text-decoration-none ">Custom PCs</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Servers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">MSI All-In-One PCs</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">HP/Compaq PCs</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">ASUS PCs</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Tecs PCs</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="fw-bold text-secondary mb-3 small">Laptops</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none ">Everyday Use Notebooks</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">MSI Workstation Series</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">MSI Prestige Series</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Tablets and Pads</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Netbooks</a></li>
+                        <li><a href="#" class="text-white text-decoration-none ">Infinity Gaming Notebooks</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-8 col-lg-4">
+                    <h6 class="fw-bold text-secondary mb-3 small">Address</h6>
+                    <ul class="list-unstyled small text-white">
+                        <li >Address: 1234 Street Address City Address, 1234</li>
+                        <li >Phones: <a href="tel:0012345678" class="text-primary text-decoration-none">(00) 1234 5678</a></li>
+                        <li >We are open: Monday-Thursday: 9:00 AM -<br> 5:30 PM</li>
+                        <li >Friday: 9:00 AM - 6:00 PM</li>
+                        <li >Saturday: 11:00 AM - 5:00 PM</li>
+                        <li>E-mail: <a href="mailto:shop@email.com" class="text-primary text-decoration-none">shop@email.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-between my-3 ">
+                <div class="fs-5 ">
+                    <a href="#" class="text-white-50 me-2" ><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="d-flex gap-2 ">
+                    <img src="images/paypal.png" alt="">
+                    <img src="images/visa.png" alt="">
+                    <img src="images/maestro.png" alt="">
+                    <img src="images/discover.png" alt="">
+                    <img src="images/american-express.png" alt="">
+                </div>
+                <div class="text-white-50 small">
+                    <span>Copyright © 2026 Shop Pty. Ltd.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="JS/checkout.js"></script>
+</body>
+</html>
